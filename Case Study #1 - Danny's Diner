@@ -6,11 +6,14 @@ GROUP BY sales.customer_id;
 
 
 
-
 /*How many days has each customer visited the restaurant?*/
 
 SELECT COUNT(DISTINCT(sales.order_date)), sales.customer_id
 FROM dannys_diner.sales
 GROUP BY sales.customer_id;
 
+
+
+/*What was the first item from the menu purchased by each customer?*/
+CTE, WITH function
  
